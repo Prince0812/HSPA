@@ -1,11 +1,37 @@
-.propimg {
-  height: 170px;
-    width: 200px;
+.card-img-wrapper {
+  overflow: hidden;
+  position: relative;
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 250px;
-    margin: 0;
-    text-align: left;
-    font-family: arial;
-    }
+
+.card:hover img{
+    transform: scale(1.2, 1.2);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    height: auto;
+    opacity: 0.9;
+}
+.card:img{
+    transform: scale(1.2, 1.2);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    height: auto;
+    opacity: 0.9;
+}
+
+.member-icons {
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
+
+.card-img-wrapper:hover .member-icons {
+  bottom: 0;
+  opacity: 1;
+}
+.animate {
+  transition: bottom 0.5s ease-in-out;
+}

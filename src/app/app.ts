@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PropertyCardComponent } from "./Property/Property-card/property-card.component";
-import { ProjectList } from "./Property/Property-card/project-list/project-list";
+import { PropertyCardComponent } from "./Property/Property-card/property-card.component"; 
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { PropertyListComponent } from './Property/project-list/project-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PropertyCardComponent, ProjectList, NavBarComponent],
+  imports: [PropertyListComponent, RouterOutlet, NavBarComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

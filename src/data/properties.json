@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "property 1",
+        "location": "Home",
+        "price": 100000
+    },
+    {
+        "id": 2,
+        "name": "Eclips Tower",
+        "location": "Apartment",
+        "price": 10000000
+    },
+    {
+        "id": 3,
+        "name": "Erose villa",
+        "location": "Home",
+        "price": 10000000
+    },
+    {
+        "id": 4,
+        "name": "Birla House",
+        "location": "Home",
+        "price": 100000000
+    },
+    {
+        "id": 5,
+        "name": "Karnavati",
+        "location": "Home",
+        "price": 1000000000
+    },
+    {
+        "id": 6,
+        "name": "Empire State",
+        "location": "Home",
+        "price": 1000000000
+    }
+    
+  ]
