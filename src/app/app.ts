@@ -6,7 +6,7 @@ import { PropertyListComponent } from './Property/project-list/project-list';
 
 @Component({
   selector: 'app-root',
-  imports: [PropertyListComponent, RouterOutlet, NavBarComponent],
+  imports: [RouterOutlet, NavBarComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">HSPA</a>
+    <a class="navbar-brand" routerLink="/">HSPA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,13 +12,13 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Buy</a>
+            <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/buy-property">Buy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Sell</a>
+            <a class="nav-link" routerLinkActive="active" routerLink="/rent-property">Rent</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/add-property">List Property (free)</a>
+            <a class="nav-link" routerLinkActive="active" routerLink="/add-property">List Property (free)</a>
         </ul>
         <form class="d-flex mt-3" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
