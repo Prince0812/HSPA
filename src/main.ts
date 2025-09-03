@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HousingService } from './app/services/housing.service';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { appRoutes } from './app/app.routes';
+import { FormsModule } from '@angular/forms';
 
 bootstrapApplication(App, appConfig)
   .catch((err) => console.error(err));
@@ -14,5 +15,6 @@ bootstrapApplication(App, appConfig)
     HttpClientModule,
     HousingService,
     RouterModule.forRoot(appRoutes),
-    RouterOutlet
+    RouterOutlet,
+    FormsModule
   ]

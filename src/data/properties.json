@@ -1,45 +1,50 @@
 [
     {
         "id": 1,
-        "SellRent": 1,
+        "SellRent": 2,
         "name": "property 1",
         "location": "Home",
-        "price": 100000
+        "price": 100000,
+        "image": "images-1.jpeg"
     },
     {
         "id": 2,
         "SellRent": 2,
         "name": "Eclips Tower",
         "location": "Apartment",
-        "price": 10000000
+        "price": 10000000,
+        "image": "images-2.jpeg"
     },
     {
         "id": 3,
         "SellRent": 1,
         "name": "Erose villa",
         "location": "Home",
-        "price": 10000000
+        "price": 10000000,
+        "image": "images-3.jpeg"
     },
     {
         "id": 4,
         "SellRent": 1,
         "name": "Birla House",
         "location": "Home",
-        "price": 100000000
+        "price": 100000000,
+        "image": "images-4.jpeg"
     },
     {
         "id": 5,
         "SellRent": 1,
         "name": "Karnavati",
         "location": "Home",
-        "price": 1000000000
+        "price": 1000000000,
+        "image": "Prop-5.jpeg"
     },
     {
         "id": 6,
         "SellRent": 1,
         "name": "Empire State",
         "location": "Home",
-        "price": 1000000000
+        "price": 100000
     }
     
   ]

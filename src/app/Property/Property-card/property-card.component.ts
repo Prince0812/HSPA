@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
     templateUrl: 'property-card.component.html',
     //styles: ['h1 { font-weight: normal; }']
     styleUrls: ['property-card.component.css'],
-    imports: [RouterLink]
+    imports: [RouterLink, CommonModule]
 
 })
 

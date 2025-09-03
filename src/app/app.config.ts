@@ -1,10 +1,11 @@
 import { ApplicationConfig, NgModule, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
 import { appRoutes } from './app.routes';
 import { HousingService } from './services/housing.service';
 import { provideHttpClient } from '@angular/common/http';
 import { PropertyDetailComponent } from './Property/property-detail/property-detail.component';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 export const appConfig: ApplicationConfig = {
@@ -14,7 +15,9 @@ export const appConfig: ApplicationConfig = {
     provideRouter(appRoutes),
     HousingService,
     provideHttpClient(),
-    PropertyDetailComponent
+    PropertyDetailComponent,
+    FormsModule,
+    ReactiveFormsModule
   ]
 };
 
