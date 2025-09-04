@@ -22,6 +22,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.2.4",
     "@angular/common": "^20.2.0",
     "@angular/compiler": "^20.2.0",
     "@angular/core": "^20.2.0",
@@ -30,6 +31,7 @@
     "@angular/router": "^20.2.0",
     "alertifyjs": "^1.14.0",
     "bootstrap": "^5.3.8",
+    "ngx-bootstrap": "^20.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
