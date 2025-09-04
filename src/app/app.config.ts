@@ -5,6 +5,7 @@ import { HousingService } from './services/housing.service';
 import { provideHttpClient } from '@angular/common/http';
 import { PropertyDetailComponent } from './Property/property-detail/property-detail.component';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserServiceService } from './services/user-service.service';
 
 
 
@@ -17,7 +18,8 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     PropertyDetailComponent,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    UserServiceService
   ]
 };
 
