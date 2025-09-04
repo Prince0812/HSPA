@@ -6,12 +6,13 @@ import { PropertyListComponent } from './Property/project-list/project-list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserRegisterComponent } from './user/user-register/user-Register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, NavBarComponent, FormsModule, 
-            ReactiveFormsModule,BrowserAnimationsModule],
+            ReactiveFormsModule, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

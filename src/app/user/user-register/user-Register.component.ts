@@ -1,4 +1,4 @@
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators, FormBuilder } from '@angular/forms';
 import { ValidationErrors, ValidatorFn, AbstractControl } from '@angular/forms';
@@ -11,7 +11,7 @@ import { AlertifyService } from '../../services/alertify.service';
 
   templateUrl: './user-Register.component.html',
   styleUrls: ['./user-Register.component.css'],
-  imports: [ReactiveFormsModule, CommonModule, NgIf]
+  imports: [ReactiveFormsModule, CommonModule]
 })
 export class UserRegisterComponent implements OnInit {
 

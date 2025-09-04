@@ -1,9 +1,8 @@
-import { Routes, RouterModule} from '@angular/router';
+import { Routes} from '@angular/router';
 import { AddPropertyComponent } from './Property/add-property/add-property.component';
 import { PropertyListComponent } from './Property/project-list/project-list';
 import { PropertyDetailComponent } from './Property/property-detail/property-detail.component';
 import { UserLoginComponent } from './user/user-login/user-Login.component';
-import { NgModule } from '@angular/core';
 import { UserRegisterComponent } from './user/user-register/user-Register.component';
 
 export const routes: Routes = [];

@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -7,8 +7,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css'],
-  imports: [RouterLink, RouterLinkActive, NgIf, BsDropdownModule],  // Removed CommonModule
-  standalone: true
+  imports: [RouterLink, RouterLinkActive, CommonModule, BsDropdownModule]
 })
 export class NavBarComponent implements OnInit {
 
