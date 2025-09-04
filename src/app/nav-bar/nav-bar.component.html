@@ -17,11 +17,14 @@
     </div>
       <div>
         <ul class="nav navbar-nav flex-row ">
-          <li class="nav-item me-3">
+          <li *ngIf="!loggedin()" class="nav-item me-3">
             <a class="nav-link" routerLink="/user/register" routerLinkActive="active">Register</a>
           </li>
-          <li class="nav-item me-3">
+          <li *ngIf="!loggedin()" class="nav-item me-3">
             <a class="nav-link" routerLink="/user/login" routerLinkActive="active">Login</a>
+          </li>
+          <li *ngIf="loggedin()" class="nav-item me-3">
+            <a class="nav-link" (click)="onLogout()" routerLinkActive="active">Logout</a>
           </li>
         </ul>
       </div>

@@ -1,10 +1,10 @@
 import { CommonModule, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators, FormBuilder } from '@angular/forms';
 import { ValidationErrors, ValidatorFn, AbstractControl } from '@angular/forms';
-import { FormBuilder } from '@angular/forms';
 import { UserServiceService } from '../../services/user-service.service';
 import { User } from '../../../model/user';
+import { AlertifyService } from '../../services/alertify.service';
 
 @Component({
   selector: 'app-user-Register',
@@ -18,7 +18,8 @@ export class UserRegisterComponent implements OnInit {
   registerationForm!: FormGroup;
   user: User = {} as User;
   userSubmitted = true;
-  constructor(private fb: FormBuilder, private userService: UserServiceService) { }
+  constructor(private fb: FormBuilder, private userService: UserServiceService,
+    private alertify: AlertifyService) { }
 
   ngOnInit() {
     // this.registerationForm = new FormGroup({
@@ -78,6 +79,10 @@ export class UserRegisterComponent implements OnInit {
     this.userService.addUser(this.userdata());
     this.registerationForm.reset();
     this.userSubmitted = false;
+    this.alertify.success('Congrats, you are successfully registered');
+    }else {
+      this.userSubmitted = true;
+      this.alertify.error('Kindly provide the required fields');
     }
   }
 
